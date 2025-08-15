@@ -1,0 +1,9 @@
+cat > railway.toml << 'EOF'
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+EOF
